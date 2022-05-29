@@ -1,0 +1,173 @@
+
+* {
+      margin: 0;
+      padding: 0;
+ 
+  }
+ 
+  body {
+      color :white;
+      background-color: gray  ;
+      font-family: sans-serif;
+      padding: 2em;
+      width : 80%;
+  }
+ 
+.content {
+    grid-area: content;
+    text-align: justify-all;
+    padding :3em;
+    width: 80%;
+
+}
+.sidebar{
+    grid-area: sidebar;
+    background: black ;
+    text-align: justify-all;
+}
+.footer {
+    grid-area: footer;
+    color :black ;
+    background: white ;
+    text-align:justify;
+    width: 1015px;
+    padding-right: 0em;
+
+}
+.container {
+    font-size: 1em;
+    width: 100%;
+    height: 100;
+    height: 100vh;
+    text-align: justify;
+ 
+}
+ 
+.sidebar,{
+    padding : 2em;
+}
+.footer{
+    padding: 2em;
+
+}
+.content,{
+   padding: 2em; 
+}
+nav ul {
+    margin: 0;
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+    text-align: justify-all;
+    background: maroon ;
+}
+ 
+nav li{
+    list-style: none;
+    padding: 0 ;
+}
+ 
+nav li a {
+    color: white;
+    font-weight: 700;
+    opacity: 0.6;
+    text-decoration: none;
+    transition: 0.3s;
+}
+ 
+nav li a {
+    opacity: 1;
+}
+.hero {
+    max-width: 700 px;
+    margin: 0 auto;
+    text-align: justify all;
+}
+ 
+}
+ 
+.hero h1 {
+    font-size: 2em;
+    font-weight: 300;
+    color: #373046;
+}
+ 
+.hero p {
+    font-weight: 300;
+    line-height: 2em;
+    color: #98aBad;
+}
+ 
+.action-btn {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+    background: green ;
+    padding: 0.5em 2em;
+    border-radius: 60px;
+    margin: 1em 0;
+    transition: 0.3s;
+}
+ 
+footer ul {
+max-width: 300px;
+margin: 0em auto;
+padding: 0em;
+text-align: left;
+flex-direction: column-reverse;
+ 
+}
+ 
+footer ul li {
+    list-style: none;
+    align-self: flex-end;
+}
+ 
+footer ul li a{
+    text-decoration: none;
+    color: #c1c6ce;
+}
+ 
+footer ul li img {
+    width: 10%;
+    flex-direction: row;
+}
+ 
+footer p {
+    font-size: 0.8em;
+}
+ 
+@media (width: 500px){
+    .container {
+        grid-template-areas:"sidebar" "content" " footer" ;
+        grid-template-rows: 1fr auto ;
+        grid-template-columns: 500px 1f;
+    }
+ 
+    nav ul{
+        display: flex;
+        
+        flex-direction: justify;
+    }
+    .sidebar{
+        background: gray  ;
+        padding-top: 0em;
+    }
+    .hero{
+        text-align: justify-all;
+        margin: 2em 0;
+
+    }
+    .hero h1{
+        font-size: 3em;
+    }
+    .hero p{
+        width: 100%;
+    }
+    footer ul {
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 0em ;
+    }
+}
